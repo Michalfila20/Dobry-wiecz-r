@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int  n, a, temp = 5;
+	cout << "Podaj n?" << endl;
+	cin >> n;
+	int* tab = new int[n];
+	cout << endl;
+	cout << "Podaj a?" << endl;
+	cin >> a;
+	cout << endl;
+	for (int i = n; i > 0; i--) {
+		a = a - temp;
+		tab[i] = a;
+		temp = temp - 5;
+	}
+	for (int i = n; i > 0; i--) {
+		cout << tab[i] << endl;
+	}
+
+}
+
+
