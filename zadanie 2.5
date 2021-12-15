@@ -1,0 +1,38 @@
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	cout << "Podaj ulice: " << endl;;
+	string  ulica;
+	getline(cin, ulica);
+	cout << endl;
+
+	cout << "Podaj nr domu: " << endl;;
+	string  nrdomu;
+	getline(cin, nrdomu);
+	cout << endl;
+
+	cout << "Na ile oceniasz swoje umiejętności programowania w skali [2 - 5]: " << endl;;
+	int prog;
+	cin >> prog;
+	cout << endl;
+
+	cout << "Twój staż programistyczny: " << endl;;
+	int staz;
+	cin >> staz;
+	cout << endl;
+
+	cout << "Twoj adres " << ulica + " " + nrdomu << endl;
+	cout << "ocena " << prog-1 << endl;
+	cout << "Staz " << staz << endl;
+
+
+
+	
+	
+}
+
