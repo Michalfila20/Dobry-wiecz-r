@@ -1,0 +1,23 @@
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	cout << "podaj imie: ";
+	string  imie;
+	getline(cin, imie);
+	cout << "podaj nazwisko: ";
+	string  naz;
+	getline(cin, naz);
+	string  suma = imie + " " + naz;
+	cout << "Nazywasz sie: " << suma << endl;
+	string zapas = suma;
+	cout << "Kopia: " << zapas << endl;
+	cout << "Ilosc znakow: " << suma.length();
+	
+
+}
+
