@@ -1,0 +1,20 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,tab[10];
+    cout << "podaj wartosc pierwsza:", cin >> a, cout << endl;
+    cout << "podaj wartosc druga:", cin >> b, cout << endl;
+    tab[0] = a;
+    tab[1] = b;
+    for (int i = 2; i < 10; i++) {
+        tab[i] = tab[i - 1] + tab[i - 2];
+    }
+    for (int i = 0; i < 10; i++) {
+        cout << tab[i] << endl;
+    }
+
+}
+
